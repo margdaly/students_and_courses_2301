@@ -9,6 +9,7 @@ RSpec.describe Student do
       expect(student.name).to eq("Morgan")
       expect(student.age).to eq(21)
     end
+  end
 
   describe 'scores/grades' do
     it 'has scores' do
@@ -20,7 +21,7 @@ RSpec.describe Student do
       expect(student.scores.include?(34)).to eq(false)
     end
 
-    xit 'has grades' do
+    it 'has grades' do
       student = Student.new({name: "Morgan", age: 21})
 
       student.log_score(89)
